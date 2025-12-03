@@ -11,4 +11,4 @@ void free(void \*ptr)
 ## optional
 
 ## module loading
-To load a module the module loader must load a ELF relocatble file and call a function called udrv_entry (int udrv_entry(udrv_env_t \*env, int argc, const char \*argv)) if the entry point return a negative value the module musy be unloaded
+The process of loading a driver is done by loading a ELF relocatble file and link it with the udrv environement runtime
